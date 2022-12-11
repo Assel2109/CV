@@ -1,0 +1,303 @@
+.round {
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid palegoldenrod; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-img {
+    background-image: url("background.jpg");
+    background-repeat: repeat;
+}
+
+.card {
+  margin-top: 30px;
+  display: flex;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+
+
+.card-body {
+    width:715px;
+    height:100px;/* Ширина слоя */ 
+    float: left;
+    margin: 0px;
+    padding: 10px; 
+    text-align:center;
+    left: 100%;
+}
+
+.menu {
+position: fixed;
+top: 0px;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: darkblue;
+  padding: 5px;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.menu ul li {
+    margin: 0 129px;
+}
+
+.menu ul li a {
+    color: white;
+}
+
+.main_page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start
+}
+
+.main {
+    width: 70%;
+    margin: 80px 60px 20px 90px;
+    
+}  
+
+.name {
+    color: darkblue;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.aside {
+    display: block; float:right; width:200px; background-color: palegoldenrod;
+}
+
+.contacts {
+    color: darkblue;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.contact_list {
+    list-style: none;
+    color: darkblue;
+    font-size: 20px;
+}
+
+.contact_list > li {
+    padding: 0 0 10px 20px;
+    align-items: darkblue;
+}
+
+.contact_list > li > a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.contact_list > li > a:active {
+    color: darkblue;
+}
+
+.contact_list > li > a:hover {
+    color: darkblue;
+}
+
+.contact_list > li:hover {
+    color: darkblue;
+}
+
+.icon {
+    width: 25px;
+    align-content: center;
+    padding-right: 5px;
+}
+
+.tel::before {
+    background-image: url('');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.main_page_button {
+    width: 50%;
+    height: 5%;
+    margin: 10px 0 0 20px;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.main_page_button > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkblue;
+}
+
+.main_page_button:hover {
+    background-color: white;
+}
+
+.main_page_button > a:hover , .experience > li > a:hover {
+    color: #3a0ca3;
+}
+
+.main_page_button > a:active {
+    color: #480ca8;
+}
+
+.heading {
+    color: darkblue;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border-top: solid 1.5px #001d3d;
+}
+
+p, .skills, .education {
+    padding: 10px 0 30px 0;
+}
+
+.skills > li {
+    list-style: url('check.svg');
+    margin-left: 12px;
+}
+
+.experience > li {
+    list-style-image: url('code.svg');
+    padding-top: 5px;
+    margin-left: 12px;
+}
+
+.experience > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.education > li, .languages > li {
+    padding-top: 5px;
+    margin-left: 17px;
+}
+
+.languages {
+    margin-bottom: 50px;
+}
+
+.form_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("background.jpg");
+    color: darkblue
+}
+
+.form_title {
+    font-size: 36px;
+    margin: 40px 0 40px 0;
+}
+
+.form_description {
+    font-size: 24px;
+    font-style: italic;
+    margin: 10px 0 20px 0;
+}
+
+.form_description > a {
+    text-decoration: none;
+    color: #006d77;
+}
+
+.form_description > a:hover {
+    color: #480ca8;
+}
+
+.form_description > a:active {
+    color: #caf0f8;
+}
+
+fieldset {
+    background-color: #edf2f4;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    color: darkblue;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 10px;
+}
+
+legend {
+    padding: 10px;
+    color: darkblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+label {
+    padding: 10px;
+}
+
+#company, #tel, #email, #address {
+    width: 80%;
+    font-style: italic;
+}
+
+select, textarea {
+    width: 80%;
+    margin: 20px;
+}
+
+textarea {
+    font-style: italic;
+}
+
+#submit {
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0 50px 0;
+    background-color: darkblue;
+    border: 0.5px solid whitesmoke;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #edf2f4;
+    font-size: 18px;
+}
+
+#submit:hover {
+    background-color: #90e0ef;
+    color:blue;
+}
+
+
+         
+
