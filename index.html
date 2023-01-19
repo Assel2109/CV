@@ -80,6 +80,7 @@
                                 <li>Tax calculation;</li>
                                 <li>Accrual of daily allowances, travel allowances.</li>
                         </ul>
+                        <br>
                         <h2 class="heading">Education</h2>
                         <hr>
                     <ol class="education">
@@ -111,7 +112,12 @@
                                     <input type="text" id="address" placeholder="Enter a location">
                                 </label>
                             </form>
-                            <input type="submit" name="submit" id="submit" value="Submit">
-        </footer>
+                            <button id="submit">Submit</button>
+                </footer>
+                <script>
+                document.getElementById('submit').onclick = function() {
+                    this.textContent = 'Processing…';
+                }
+            </script>
         </body>
 </html>

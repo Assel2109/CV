@@ -1,19 +1,19 @@
 .round {
-    border-radius: 100px; /* Радиус скругления */
-    border: 3px solid palegoldenrod; /* Параметры рамки */
-    box-shadow: 0 0 7px #666; /* Параметры тени */
+    border-radius: 100px; 
+    border: 3px solid palegoldenrod; 
+    box-shadow: 0 0 7px #666; 
    }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
 body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 .background-img {
@@ -22,7 +22,7 @@ body {
 }
 
 .card {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content:center;
   margin-bottom: 20px;
@@ -32,17 +32,24 @@ body {
 .card-body {
     width:715px;
     height:100px;/* Ширина слоя */ 
-    float: left;
+    float: center;
     margin: 0px;
-    padding: 10px; 
+    padding: 0px; 
     text-align:center;
-    left: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
 .menu {
-position: fixed;
-top: 0px;
-}
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+ }
 
 .menu ul {
   display: flex;
@@ -50,14 +57,13 @@ top: 0px;
   justify-content: center;
   background-color: darkblue;
   padding: 5px;
-
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-bottom: 0px;
 }
 
 .menu ul li {
-    margin: 0 129px;
+    margin: 0 100px;
 }
 
 .menu ul li a {
@@ -67,23 +73,22 @@ top: 0px;
 .main_page {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start
+    justify-content: space-between;
 }
 
 .main {
     width: 70%;
     margin: 80px 60px 20px 90px;
-    
 }  
 
 .name {
     color: darkblue;
-    font-size: 48px;
+    font-size: 50px;
     padding-bottom: 20px;
 }
 
 .aside {
-    display: block; float:right; width:200px; background-color: palegoldenrod;
+    display: block; float:center; width:200px; background-color: palegoldenrod;
 }
 
 .contacts {
@@ -128,7 +133,7 @@ top: 0px;
 
 .tel::before {
     background-image: url('');
-    background-position: left center;
+    background-position: center;
     background-repeat: no-repeat;
     padding-left: 20px;
 }
@@ -148,7 +153,7 @@ top: 0px;
 
 .main_page_button > a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 10px;
     color: darkblue;
 }
 
@@ -207,9 +212,9 @@ p, .skills, .education {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     background-image: url("background.jpg");
-    color: darkblue
+    color: darkblue;
 }
 
 .form_title {
@@ -250,6 +255,10 @@ fieldset {
     flex-direction: column;
     width: 700px;
     margin: 10px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
 legend {
@@ -260,17 +269,17 @@ legend {
 }
 
 label {
-    padding: 10px;
+    padding: 5px;
 }
 
 #company, #tel, #email, #address {
-    width: 80%;
+    width: 100%;
     font-style: italic;
 }
 
 select, textarea {
     width: 80%;
-    margin: 20px;
+    margin: 100px;
 }
 
 textarea {
